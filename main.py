@@ -5,7 +5,7 @@ from app.orm_db import engine
 from app.routers import post, user, auth, vote
 from app.config import settings
 
-# models.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 origins = ["*"]
